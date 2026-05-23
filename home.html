@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felix Wambua | Senator Machakos 2027</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            500: '#3b82f6',
+                            900: '#1e3a8a',
+                            accent: '#fbbf24' // Vibrant gold for CTAs
+                        },
+                        dark: {
+                            bg: '#0f172a', // Deep slate for premium dark mode
+                            card: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth SPA entry animations */
+        .fade-enter {
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+        }
+        .fade-enter-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-dark-bg dark:text-gray-100 transition-colors duration-300 font-sans antialiased">
+
+    <!-- Glassmorphism Sticky Nav -->
+    <nav class="fixed w-full z-50 top-0 transition-all duration-300 bg-white/70 dark:bg-dark-bg/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="navigate('hero')">
+                    <span class="font-bold text-2xl tracking-tight text-brand-900 dark:text-white">WAMBUA<span class="text-brand-500">2027</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <button onclick="navigate('hero')" class="nav-link text-gray-700 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-accent transition-colors font-medium">Home</button>
+                    <button onclick="navigate('about')" class="nav-link text-gray-700 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-accent transition-colors font-medium">Meet Felix</button>
+                    <button onclick="navigate('manifesto')" class="nav-link text-gray-700 dark:text-gray-300 hover:text-brand-500 dark:hover:text-brand-accent transition-colors font-medium">The Vision</button>
+                    
+                    <!-- Dark Mode Toggle -->
+                    <button id="theme-toggle" class="p-2 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 hover:ring-2 ring-brand-500 transition-all">
+                        <svg id="theme-toggle-dark-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
+                        <svg id="theme-toggle-light-icon" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4.22 4.22a1 1 0 01-1.415 1.415l-.707-.707a1 1 0 011.415-1.415l.707.707zM6.343 9.657a1 1 0 01-1.414 0L4.222 8.943a1 1 0 011.415-1.415l.707.707a1 1 0 010 1.414zM10 14a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zm4.22-4.22a1 1 0 01-1.415-1.415l-.707.707a1 1 0 011.415 1.415l.707-.707zM6.343 14.343a1 1 0 01-1.414 0l-.707-.707a1 1 0 011.415-1.415l.707.707a1 1 0 010 1.414zM10 5a5 5 0 100 10 5 5 0 000-10z"></path></svg>
+                    </button>
+
+                    <button class="bg-brand-500 hover:bg-brand-600 text-white px-6 py-2 rounded-full font-semibold shadow-lg shadow-brand-500/30 transition-all transform hover:-translate-y-0.5">Donate</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SPA Main Container -->
+    <main id="app-content" class="pt-20">
+        
+        <!-- View: Hero -->
+        <section id="hero" class="spa-view fade-enter fade-enter-active min-h-[90vh] flex items-center relative overflow-hidden">
+            <!-- Background gradient blobs for that modern SaaS feel -->
+            <div class="absolute top-0 left-1/2 w-full -translate-x-1/2 h-full overflow-hidden -z-10">
+                <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-brand-500/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+                <div class="absolute top-[20%] right-[-10%] w-96 h-96 bg-brand-accent/20 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <span class="inline-block py-1 px-3 rounded-full bg-brand-50 dark:bg-brand-900/30 text-brand-500 dark:text-brand-accent font-semibold text-sm mb-6 border border-brand-100 dark:border-brand-500/20">The Future of Machakos</span>
+                        <h1 class="text-5xl lg:text-7xl font-bold tracking-tight mb-6 leading-tight">
+                            Accountable <br/>
+                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-500 to-brand-900 dark:to-brand-accent">Leadership.</span>
+                        </h1>
+                        <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 max-w-lg">
+                            It's time for genuine change. Join the movement to build a prosperous, transparent, and united Machakos County.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button class="bg-brand-500 hover:bg-brand-600 text-white px-8 py-4 rounded-full font-bold text-lg shadow-xl shadow-brand-500/30 transition-all transform hover:-translate-y-1">Join the Movement</button>
+                            <button onclick="navigate('manifesto')" class="bg-white dark:bg-dark-card border-2 border-gray-200 dark:border-gray-700 hover:border-brand-500 dark:hover:border-brand-accent text-gray-900 dark:text-white px-8 py-4 rounded-full font-bold text-lg transition-all">Read the Vision</button>
+                        </div>
+                    </div>
+                    <div class="relative hidden lg:block">
+                        <!-- Placeholder for high-quality campaign image -->
+                        <div class="aspect-[4/5] rounded-2xl bg-gradient-to-tr from-gray-200 to-gray-100 dark:from-gray-800 dark:to-gray-700 shadow-2xl overflow-hidden relative">
+                            <div class="absolute inset-0 flex items-center justify-center text-gray-400 dark:text-gray-600 font-medium">
+                                [Insert High-Res Image of Felix Wambua]
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- View: About -->
+        <section id="about" class="spa-view hidden py-24">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl font-bold mb-6">A Proud Son of Machakos</h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                    Felix Wambua is a bold and visionary leader shaped by grassroots experience and intellectual rigor. Professionally trained in physical planning and deeply experienced in software development, Felix brings a tech-driven, forward-thinking mindset to solving our county's challenges.
+                </p>
+            </div>
+        </section>
+
+        <!-- View: Manifesto -->
+        <section id="manifesto" class="spa-view hidden py-24 bg-white dark:bg-dark-card">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl font-bold mb-4">Core Pillars</h2>
+                    <p class="text-gray-600 dark:text-gray-400">Our blueprint for a working Machakos.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Card 1 -->
+                    <div class="p-8 rounded-2xl bg-gray-50 dark:bg-dark-bg border border-gray-100 dark:border-gray-800 hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-12 h-12 bg-brand-100 dark:bg-brand-900/50 rounded-xl flex items-center justify-center mb-6">
+                            <span class="text-2xl">📈</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Economic Justice</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Demanding transparency in financial governance and ending odious public debt.</p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="p-8 rounded-2xl bg-gray-50 dark:bg-dark-bg border border-gray-100 dark:border-gray-800 hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-12 h-12 bg-brand-100 dark:bg-brand-900/50 rounded-xl flex items-center justify-center mb-6">
+                            <span class="text-2xl">💻</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Tech Innovation</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Bringing digital solutions to Machakos to create opportunities for the youth.</p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="p-8 rounded-2xl bg-gray-50 dark:bg-dark-bg border border-gray-100 dark:border-gray-800 hover:shadow-xl transition-shadow duration-300">
+                        <div class="w-12 h-12 bg-brand-100 dark:bg-brand-900/50 rounded-xl flex items-center justify-center mb-6">
+                            <span class="text-2xl">🌱</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Land Rights</h3>
+                        <p class="text-gray-600 dark:text-gray-400">Protecting land rights in Ukambani and ensuring our resources benefit the community first.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        // SPA Routing Logic
+        function navigate(viewId) {
+            const views = document.querySelectorAll('.spa-view');
+            views.forEach(view => {
+                if (view.id === viewId) {
+                    view.classList.remove('hidden');
+                    // Force reflow for animation
+                    void view.offsetWidth;
+                    view.classList.add('fade-enter-active');
+                } else {
+                    view.classList.add('hidden');
+                    view.classList.remove('fade-enter-active');
+                }
+            });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Dark/Light Mode Logic
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+        const themeToggleBtn = document.getElementById('theme-toggle');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            themeToggleLightIcon.classList.remove('hidden');
+            document.documentElement.classList.add('dark');
+        } else {
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
