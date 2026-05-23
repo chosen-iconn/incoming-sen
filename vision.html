@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vision & Manifesto | Felix Wambua 2027</title>
-    <meta name="description" content="Read the comprehensive vision and legislative manifesto of Felix Wambua for Machakos County.">
+    <title>Felix Wambua | Incoming Senator for Machakos County</title>
+    <meta name="description" content="Official campaign website for Felix Wambua, incoming Senator for Machakos County 2027.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     
     <!-- Tailwind CSS Config -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -28,7 +28,8 @@
                         body: ['Inter', 'sans-serif'],
                     },
                     boxShadow: {
-                        'premium': '0 10px 40px -10px rgba(15, 61, 46, 0.08)',
+                        'premium': '0 10px 40px -10px rgba(15, 61, 46, 0.1)',
+                        'gold-glow': '0 4px 20px -2px rgba(212, 160, 23, 0.3)'
                     }
                 }
             }
@@ -38,47 +39,45 @@
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
+    <!-- Custom CSS for specific cinematic effects -->
     <style>
         body { background-color: #F8F6F1; color: #1A1A1A; }
         
         .glass-nav {
-            background: rgba(248, 246, 241, 0.95);
+            background: rgba(248, 246, 241, 0.85);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid rgba(15, 61, 46, 0.05);
+            transition: all 0.3s ease;
         }
 
-        .hero-gradient {
-            background: linear-gradient(135deg, #0F3D2E 0%, #0a291f 100%);
+        .scrolled .glass-nav {
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
         }
 
-        /* Numbered list for Timeline */
-        .timeline-step { position: relative; }
-        .timeline-step::after {
-            content: '';
-            position: absolute;
-            left: 24px;
-            top: 60px;
-            bottom: -30px;
-            width: 1px;
-            background: rgba(212, 160, 23, 0.3);
-            z-index: 0;
+        .cinematic-bg {
+            background: radial-gradient(circle at top right, rgba(212, 160, 23, 0.05) 0%, transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(15, 61, 46, 0.08) 0%, transparent 40%);
         }
-        .timeline-step:last-child::after { display: none; }
+
+        .image-mask {
+            mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        }
+
+        .masonry { column-count: 2; column-gap: 1.5rem; }
+        @media (min-width: 768px) { .masonry { column-count: 3; } }
+        .masonry > div { break-inside: avoid; margin-bottom: 1.5rem; }
 
         .btn-hover-effect { transition: all 0.3s ease; }
-        .btn-hover-effect:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -10px rgba(212, 160, 23, 0.4); }
+        .btn-hover-effect:hover { transform: translateY(-2px); }
 
+        /* Subtle load animations */
         .fade-up { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
         .fade-up.visible { opacity: 1; transform: translateY(0); }
-        
-        /* Subtle pattern overlay */
-        .bg-pattern {
-            background-image: radial-gradient(rgba(15, 61, 46, 0.05) 1px, transparent 1px);
-            background-size: 20px 20px;
-        }
     </style>
 </head>
-<body class="font-body antialiased overflow-x-hidden">
+    <body class="font-body antialiased overflow-x-hidden">
 
     <!-- 1. NAVBAR -->
     <nav class="fixed w-full z-50 glass-nav py-4 shadow-sm">
