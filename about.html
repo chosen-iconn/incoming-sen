@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Felix Wambua | The Journey</title>
+    <meta name="description" content="Discover the story, leadership journey, and vision of Felix Wambua, incoming Senator for Machakos County.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: '#0F3D2E',
+                        gold: '#D4A017',
+                        ivory: '#F8F6F1',
+                        charcoal: '#1A1A1A',
+                    },
+                    fontFamily: {
+                        heading: ['Cormorant Garamond', 'serif'],
+                        body: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { background-color: #F8F6F1; color: #1A1A1A; }
+        
+        .glass-nav {
+            background: rgba(248, 246, 241, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(15, 61, 46, 0.05);
+        }
+
+        /* Cinematic Hero Overlay */
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(15,61,46,0.8) 0%, rgba(15,61,46,0.95) 100%);
+        }
+
+        /* Timeline Styles */
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background-color: rgba(212, 160, 23, 0.3);
+            z-index: 0;
+        }
+        @media (max-width: 768px) {
+            .timeline-line::before {
+                left: 16px;
+                transform: none;
+            }
+        }
+
+        .fade-up { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="font-body antialiased overflow-x-hidden">
+
+    <!-- 1. NAVBAR (Simplified for subpage) -->
+    <nav class="fixed w-full z-50 glass-nav py-4 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-forest text-gold flex items-center justify-center rounded-sm font-heading text-2xl font-bold">FW</div>
+                <span class="font-heading font-semibold text-xl tracking-wide text-forest hidden sm:block">Felix Wambua</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-charcoal">
+                <a href="index.html" class="hover:text-gold transition">Home</a>
+                <a href="#" class="text-gold transition">About</a>
+                <a href="index.html#vision" class="hover:text-gold transition">Vision</a>
+                <a href="index.html#manifesto" class="hover:text-gold transition">Manifesto</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="index.html#join" class="bg-forest text-ivory px-6 py-2 text-sm tracking-wide hover:bg-forest/90 transition">Join the Movement</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. EDITORIAL HERO SECTION -->
+    <section class="relative min-h-[60vh] pt-32 pb-20 flex items-center bg-forest text-ivory overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <!-- Using a placeholder for Machakos Hills landscape -->
+            <img src="https://images.unsplash.com/photo-1547471080-7fc2caa6f17f?auto=format&fit=crop&w=1920&q=80" alt="Machakos Landscape" class="w-full h-full object-cover opacity-30 grayscale mix-blend-overlay">
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 relative z-10 text-center fade-up">
+            <h4 class="text-gold font-medium tracking-widest text-sm uppercase mb-6">The Man Behind the Vision</h4>
+            <h1 class="font-heading text-5xl md:text-7xl font-semibold leading-tight mb-6">
+                A Son of Machakos.<br>
+                <span class="font-light italic text-white/90">A Voice for the People.</span>
+            </h1>
+            <p class="text-lg md:text-xl font-light text-ivory/80 max-w-2xl mx-auto leading-relaxed">
+                "True leadership isn't found in boardrooms; it is forged on the dusty roads, in the bustling markets, and through the shared resilience of our communities."
+            </p>
+        </div>
+    </section>
+
+    <!-- 3. EARLY LIFE & ROOTS (Documentary Split) -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative fade-up">
+                <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-gold/30 z-0"></div>
+                <img src="https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80" 
+                     alt="Felix Wambua Portrait" 
+                     class="relative z-10 w-full h-[600px] object-cover grayscale-[20%] shadow-2xl">
+                <!-- Caption -->
+                <div class="absolute bottom-6 left-6 z-20 bg-white/90 backdrop-blur p-4 border-l-2 border-gold max-w-[80%]">
+                    <p class="text-sm font-heading italic text-charcoal">"Listening first. Leading second." — Engagements in Kathiani, 2025.</p>
+                </div>
+            </div>
+            
+            <div class="space-y-8 fade-up">
+                <div>
+                    <h2 class="font-heading text-4xl text-forest mb-4">Rooted in Our Red Soil</h2>
+                    <div class="w-16 h-1 bg-gold"></div>
+                </div>
+                
+                <div class="space-y-6 text-gray-600 font-light leading-relaxed">
+                    <p>Born into a humble family in the heart of Mwala Sub-County, Felix Wambua’s early life was defined by the realities of rural Kenya. He walked kilometers to a local public school, fully understanding the daily struggle for water, the anxiety of delayed rains, and the unyielding hope of parents who sacrifice everything for their children's education.</p>
+                    
+                    <p>These formative years instilled in him a profound work ethic and an unbreakable bond with the people of Machakos. He didn't just learn about community resilience; he lived it.</p>
+                    
+                    <p>After earning a scholarship to pursue Economics and Public Policy, Felix could have settled comfortably in the corporate sector. Instead, he returned home, dedicating the last 15 years to grassroots organization, youth mentorship, and civic accountability.</p>
+                </div>
+
+                <div class="grid grid-cols-2 gap-8 pt-6 border-t border-gray-100">
+                    <div>
+                        <h4 class="font-heading text-2xl text-forest font-semibold">15+ Years</h4>
+                        <p class="text-sm text-gray-500 mt-1">Community Advocacy</p>
+                    </div>
+                    <div>
+                        <h4 class="font-heading text-2xl text-forest font-semibold">8 Sub-Counties</h4>
+                        <p class="text-sm text-gray-500 mt-1">Deeply Connected</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. CORE VALUES -->
+    <section class="py-24 bg-ivory">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="font-heading text-4xl text-forest mb-4">The Pillars of My Leadership</h2>
+                <p class="text-gray-500 font-light">The principles that guide every decision, policy, and action.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="bg-white p-10 border-t-2 border-gold shadow-sm hover:shadow-lg transition duration-300 fade-up">
+                    <i class="fas fa-balance-scale text-3xl text-forest mb-6"></i>
+                    <h3 class="font-heading text-2xl font-semibold mb-4 text-charcoal">Fierce Accountability</h3>
+                    <p class="text-gray-600 font-light text-sm leading-relaxed">The Senate's primary role is oversight. I pledge to protect devolution by ensuring every shilling allocated to Machakos is accounted for and visibly improves lives.</p>
+                </div>
+                <!-- Value 2 -->
+                <div class="bg-white p-10 border-t-2 border-gold shadow-sm hover:shadow-lg transition duration-300 fade-up">
+                    <i class="fas fa-hands-helping text-3xl text-forest mb-6"></i>
+                    <h3 class="font-heading text-2xl font-semibold mb-4 text-charcoal">Inclusive Empathy</h3>
+                    <p class="text-gray-600 font-light text-sm leading-relaxed">Leadership must be accessible. From the mama mboga in Athi River to the farmer in Kangundo, my office will be a sanctuary for the voices of all our people.</p>
+                </div>
+                <!-- Value 3 -->
+                <div class="bg-white p-10 border-t-2 border-gold shadow-sm hover:shadow-lg transition duration-300 fade-up">
+                    <i class="fas fa-lightbulb text-3xl text-forest mb-6"></i>
+                    <h3 class="font-heading text-2xl font-semibold mb-4 text-charcoal">Modern Innovation</h3>
+                    <p class="text-gray-600 font-light text-sm leading-relaxed">We cannot solve tomorrow's problems with yesterday's tools. I advocate for data-driven policies, tech-enabled agriculture, and modern education frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. THE LEADERSHIP JOURNEY (Timeline) -->
+    <section class="py-24 bg-forest text-ivory relative">
+        <div class="max-w-5xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="font-heading text-4xl text-white mb-4">A Track Record of Service</h2>
+                <div class="w-16 h-1 bg-gold mx-auto"></div>
+            </div>
+
+            <div class="relative timeline-line">
+                <!-- Event 1 -->
+                <div class="relative z-10 flex flex-col md:flex-row justify-between items-center w-full mb-12 fade-up">
+                    <div class="order-1 md:w-5/12 hidden md:block"></div>
+                    <div class="z-20 flex items-center order-1 bg-gold shadow-xl w-8 h-8 rounded-full md:absolute md:left-1/2 md:transform md:-translate-x-1/2 absolute left-0 transform translate-x-2 md:translate-x-0"></div>
+                    <div class="order-1 bg-white/5 border border-white/10 p-6 md:w-5/12 w-full ml-12 md:ml-0 hover:bg-white/10 transition">
+                        <h4 class="text-gold font-bold text-sm tracking-widest mb-2">2012 - 2016</h4>
+                        <h3 class="font-heading text-2xl font-semibold mb-2 text-white">The Youth Empowerment Initiative</h3>
+                        <p class="text-sm font-light text-white/70">Founded a community-based organization that provided vocational training and micro-loans to over 5,000 young men and women across Machakos.</p>
+                    </div>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="relative z-10 flex flex-col md:flex-row justify-between items-center w-full mb-12 fade-up">
+                    <div class="order-1 bg-white/5 border border-white/10 p-6 md:w-5/12 w-full ml-12 md:ml-0 md:text-right hover:bg-white/10 transition">
+                        <h4 class="text-gold font-bold text-sm tracking-widest mb-2">2017 - 2021</h4>
+                        <h3 class="font-heading text-2xl font-semibold mb-2 text-white">Public Policy Advisor</h3>
+                        <p class="text-sm font-light text-white/70">Served on national boards advising on devolved agricultural policies, ensuring Machakos farmers gained access to subsidized fertilizers and modern farming techniques.</p>
+                    </div>
+                    <div class="z-20 flex items-center order-1 bg-gold shadow-xl w-8 h-8 rounded-full md:absolute md:left-1/2 md:transform md:-translate-x-1/2 absolute left-0 transform translate-x-2 md:translate-x-0"></div>
+                    <div class="order-1 md:w-5/12 hidden md:block"></div>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="relative z-10 flex flex-col md:flex-row justify-between items-center w-full fade-up">
+                    <div class="order-1 md:w-5/12 hidden md:block"></div>
+                    <div class="z-20 flex items-center order-1 bg-gold shadow-xl w-8 h-8 rounded-full md:absolute md:left-1/2 md:transform md:-translate-x-1/2 absolute left-0 transform translate-x-2 md:translate-x-0"></div>
+                    <div class="order-1 bg-white/5 border border-white/10 p-6 md:w-5/12 w-full ml-12 md:ml-0 hover:bg-white/10 transition">
+                        <h4 class="text-gold font-bold text-sm tracking-widest mb-2">2022 - Present</h4>
+                        <h3 class="font-heading text-2xl font-semibold mb-2 text-white">Machakos Accountability Forum</h3>
+                        <p class="text-sm font-light text-white/70">Spearheaded civic education drives, helping citizens understand county budgets and demanding transparency in local infrastructure projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. A PERSONAL NOTE / PHILOSOPHY -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center space-y-8 fade-up">
+            <i class="fas fa-quote-left text-4xl text-gold/30 mb-4"></i>
+            <h2 class="font-heading text-3xl md:text-5xl text-forest leading-relaxed">
+                "I am not asking for your vote simply to hold an office. I am asking for your partnership to secure our future. Together, we can build a Machakos where hard work is rewarded, where our youth find opportunity at home, and where leadership answers to the people."
+            </h2>
+            <div class="pt-8">
+                <p class="font-heading text-xl font-bold text-charcoal">Felix Wambua</p>
+                <p class="text-sm text-gray-500 uppercase tracking-widest mt-1">Incoming Senator, Machakos</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Signature_Placeholder.svg/200px-Signature_Placeholder.svg.png" alt="Signature" class="h-10 mx-auto mt-4 opacity-80">
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER (Minimal) -->
+    <footer class="bg-charcoal text-ivory/70 py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-6">
+                <div class="w-8 h-8 bg-gold text-forest flex items-center justify-center rounded-sm font-heading text-lg font-bold">FW</div>
+                <span class="font-heading font-semibold text-lg tracking-wide text-white">Felix Wambua</span>
+            </div>
+            <p class="text-xs font-light tracking-wider uppercase mb-6">Machakos County Senatorial Campaign 2027</p>
+            <div class="space-x-6 text-sm font-light">
+                <a href="index.html" class="hover:text-gold transition">Back to Home</a>
+                <a href="index.html#volunteer" class="hover:text-gold transition">Volunteer</a>
+                <a href="index.html#donate" class="text-gold font-medium">Donate</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts for animations -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
