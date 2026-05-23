@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vision & Manifesto | Felix Wambua 2027</title>
+    <meta name="description" content="Read the comprehensive vision and legislative manifesto of Felix Wambua for Machakos County.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS Config -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        forest: '#0F3D2E',
+                        gold: '#D4A017',
+                        ivory: '#F8F6F1',
+                        charcoal: '#1A1A1A',
+                    },
+                    fontFamily: {
+                        heading: ['Cormorant Garamond', 'serif'],
+                        body: ['Inter', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        'premium': '0 10px 40px -10px rgba(15, 61, 46, 0.08)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body { background-color: #F8F6F1; color: #1A1A1A; }
+        
+        .glass-nav {
+            background: rgba(248, 246, 241, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(15, 61, 46, 0.05);
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #0F3D2E 0%, #0a291f 100%);
+        }
+
+        /* Numbered list for Timeline */
+        .timeline-step { position: relative; }
+        .timeline-step::after {
+            content: '';
+            position: absolute;
+            left: 24px;
+            top: 60px;
+            bottom: -30px;
+            width: 1px;
+            background: rgba(212, 160, 23, 0.3);
+            z-index: 0;
+        }
+        .timeline-step:last-child::after { display: none; }
+
+        .btn-hover-effect { transition: all 0.3s ease; }
+        .btn-hover-effect:hover { transform: translateY(-2px); box-shadow: 0 10px 20px -10px rgba(212, 160, 23, 0.4); }
+
+        .fade-up { opacity: 0; transform: translateY(20px); transition: all 0.8s ease-out; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+        
+        /* Subtle pattern overlay */
+        .bg-pattern {
+            background-image: radial-gradient(rgba(15, 61, 46, 0.05) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="font-body antialiased overflow-x-hidden">
+
+    <!-- 1. NAVBAR -->
+    <nav class="fixed w-full z-50 glass-nav py-4 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 flex justify-between items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+                <div class="w-10 h-10 bg-forest text-gold flex items-center justify-center rounded-sm font-heading text-2xl font-bold">FW</div>
+                <span class="font-heading font-semibold text-xl tracking-wide text-forest hidden sm:block">Felix Wambua</span>
+            </a>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-medium text-charcoal">
+                <a href="index.html" class="hover:text-gold transition">Home</a>
+                <a href="about.html" class="hover:text-gold transition">About</a>
+                <a href="#" class="text-gold transition">Vision & Manifesto</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="index.html#join" class="border border-forest text-forest px-5 py-2 text-sm tracking-wide hover:bg-forest hover:text-ivory transition hidden sm:block">Volunteer</a>
+                <a href="#download" class="bg-gold text-forest font-semibold px-6 py-2 text-sm tracking-wide btn-hover-effect flex items-center gap-2">
+                    <i class="fas fa-file-download"></i> <span class="hidden sm:inline">Manifesto</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. HERO SECTION -->
+    <section class="relative pt-32 pb-24 lg:pt-40 lg:pb-32 hero-gradient overflow-hidden">
+        <!-- Abstract Background Elements -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gold/5 blur-3xl rounded-full transform translate-x-1/3 -translate-y-1/4"></div>
+        <div class="absolute bottom-0 left-0 w-1/3 h-full bg-white/5 blur-2xl transform -translate-x-1/4 translate-y-1/4"></div>
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8 fade-up">
+                <div class="inline-flex items-center space-x-2 border border-gold/30 rounded-full px-4 py-1.5 bg-white/5">
+                    <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+                    <span class="text-gold font-medium tracking-widest text-xs uppercase">The 2027 Legislative Agenda</span>
+                </div>
+                <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-semibold leading-tight text-white">
+                    The Blueprint<br>
+                    <span class="italic font-light text-gold">for Machakos</span>
+                </h1>
+                <p class="text-lg text-ivory/80 font-light max-w-lg leading-relaxed">
+                    A comprehensive, actionable, and data-driven vision to empower youth, transform agriculture, and demand absolute accountability for every county shilling.
+                </p>
+            </div>
+
+            <!-- Hero Stats Infographic -->
+            <div class="grid grid-cols-2 gap-4 lg:ml-auto fade-up delay-100">
+                <div class="bg-white/10 backdrop-blur border border-white/20 p-6 rounded-sm text-center transform translate-y-4">
+                    <i class="fas fa-bullseye text-gold text-2xl mb-3"></i>
+                    <h3 class="font-heading text-4xl text-white font-semibold mb-1">8</h3>
+                    <p class="text-xs text-ivory/70 uppercase tracking-widest">Core Pillars</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur border border-white/20 p-6 rounded-sm text-center">
+                    <i class="fas fa-file-contract text-gold text-2xl mb-3"></i>
+                    <h3 class="font-heading text-4xl text-white font-semibold mb-1">1</h3>
+                    <p class="text-xs text-ivory/70 uppercase tracking-widest">Binding Pact</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. TOP PRIORITIES (Editorial Deep-Dives) -->
+    <section class="py-24 bg-ivory bg-pattern">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-20 fade-up">
+                <h2 class="text-gold font-bold text-sm tracking-widest uppercase mb-2">The Critical Mandates</h2>
+                <h3 class="font-heading text-4xl md:text-5xl text-forest">Immediate Priorities</h3>
+                <div class="w-16 h-1 bg-forest mx-auto mt-6"></div>
+            </div>
+
+            <!-- Priority 1: Water -->
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center mb-24 fade-up">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1516908205727-48af61b17e47?auto=format&fit=crop&w=800&q=80" alt="Water Access" class="w-full h-[400px] object-cover grayscale-[30%] shadow-premium rounded-sm">
+                    <div class="absolute -bottom-6 -right-6 bg-forest text-ivory p-6 shadow-xl max-w-xs border-l-4 border-gold hidden lg:block">
+                        <p class="text-3xl font-heading font-semibold text-gold">100%</p>
+                        <p class="text-sm font-light">Targeted mapping of all viable ward-level boreholes within year one.</p>
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div class="w-12 h-12 bg-forest/5 text-forest flex items-center justify-center rounded-full text-xl mb-4"><i class="fas fa-tint text-gold"></i></div>
+                    <h4 class="font-heading text-3xl md:text-4xl text-forest font-semibold">Universal Water Access</h4>
+                    <p class="text-gray-600 font-light leading-relaxed">Water is not a luxury; it is the foundation of health and economic dignity. Machakos has suffered long enough from uncompleted water projects.</p>
+                    <ul class="space-y-3 text-sm text-gray-700 font-light">
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-3"></i> Push for Senate legislation increasing equitable share allocations for semi-arid counties specifically for water infrastructure.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-3"></i> Audit the Thwake Dam reticulation plan to ensure local Machakos residents are prioritized.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-3"></i> Sponsor the "County Water Transparency Bill" to track every borehole sunk by the county government.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Priority 2: Youth & Innovation (Reversed) -->
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center mb-24 fade-up">
+                <div class="space-y-6 order-2 md:order-1">
+                    <div class="w-12 h-12 bg-forest/5 text-forest flex items-center justify-center rounded-full text-xl mb-4"><i class="fas fa-laptop-code text-gold"></i></div>
+                    <h4 class="font-heading text-3xl md:text-4xl text-forest font-semibold">Youth Empowerment & Innovation</h4>
+                    <p class="text-gray-600 font-light leading-relaxed">Our greatest natural resource is not under our soil, but in the minds of our youth. We must transition from manual labor dependency to the digital economy.</p>
+                    <ul class="space-y-3 text-sm text-gray-700 font-light">
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-3"></i> Lobby for national government partnerships to establish Free Wi-Fi Tech Hubs in all 8 sub-counties.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-3"></i> Create a legislative framework for the 'Machakos Youth Enterprise Fund' with zero-interest startup loans.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-3"></i> Shift focus to TVET modernization, linking local graduates directly with industries in Athi River and Mavoko.</li>
+                    </ul>
+                </div>
+                <div class="relative order-1 md:order-2">
+                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80" alt="Youth Tech" class="w-full h-[400px] object-cover grayscale-[30%] shadow-premium rounded-sm">
+                </div>
+            </div>
+
+            <!-- Priority 3: Agriculture -->
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center fade-up">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1595841696677-6489ff3f8cd1?auto=format&fit=crop&w=800&q=80" alt="Agriculture" class="w-full h-[400px] object-cover grayscale-[30%] shadow-premium rounded-sm">
+                </div>
+                <div class="space-y-6">
+                    <div class="w-12 h-12 bg-forest/5 text-forest flex items-center justify-center rounded-full text-xl mb-4"><i class="fas fa-seedling text-gold"></i></div>
+                    <h4 class="font-heading text-3xl md:text-4xl text-forest font-semibold">Agriculture & Food Security</h4>
+                    <p class="text-gray-600 font-light leading-relaxed">Empowering the rural farmer is the quickest way to stimulate the local economy. We must protect our farmers from exploitation and climate volatility.</p>
+                    <ul class="space-y-3 text-sm text-gray-700 font-light">
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-3"></i> Sponsor legislation protecting mango and citrus farmers from middle-men cartels.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-3"></i> Advocate for national subsidies on drought-resistant seeds and specialized fertilizers for Ukambani soil.</li>
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-3"></i> Push for the establishment of county-level value-addition factories to process surplus produce.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. ACCOUNTABILITY BANNER (The Core Senatorial Duty) -->
+    <section class="py-20 bg-forest text-ivory border-y-4 border-gold relative overflow-hidden">
+        <div class="absolute opacity-5 right-0 top-0 text-[300px] leading-none font-heading"><i class="fas fa-scale-balanced"></i></div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-3 gap-12 items-center">
+                <div class="lg:col-span-2 space-y-6 fade-up">
+                    <h2 class="text-gold font-bold text-sm tracking-widest uppercase">The Senator's Core Mandate</h2>
+                    <h3 class="font-heading text-4xl md:text-5xl font-semibold">Uncompromising Transparency & Accountability</h3>
+                    <p class="font-light text-ivory/80 leading-relaxed max-w-2xl text-lg">
+                        A Senator does not build roads; a Senator ensures that the money meant for roads is actually spent on roads. I will be the fiercest watchdog for Machakos County's resources.
+                    </p>
+                </div>
+                <div class="space-y-4 border-l border-white/20 pl-8 fade-up delay-100">
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-search-dollar text-gold text-2xl mt-1"></i>
+                        <div>
+                            <h4 class="font-heading text-xl font-semibold">Quarterly Public Audits</h4>
+                            <p class="text-xs font-light text-ivory/70 mt-1">Publishing easy-to-read county expenditure reports for citizens.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4">
+                        <i class="fas fa-users text-gold text-2xl mt-1"></i>
+                        <div>
+                            <h4 class="font-heading text-xl font-semibold">Citizen Assemblies</h4>
+                            <p class="text-xs font-light text-ivory/70 mt-1">Bi-annual town halls in every sub-county to collect public views.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. THE FOUNDATION (Grid of 4 Remaining Pillars) -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h3 class="font-heading text-4xl text-forest">The Foundations of Growth</h3>
+                <p class="text-gray-500 font-light mt-4">Policies designed to elevate the standard of living across the county.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1: Healthcare -->
+                <div class="p-8 border border-gray-100 bg-ivory/30 shadow-sm hover:shadow-premium transition-all duration-300 group fade-up">
+                    <div class="w-12 h-12 rounded bg-white flex items-center justify-center text-forest text-xl mb-6 shadow-sm group-hover:bg-forest group-hover:text-gold transition"><i class="fas fa-heartbeat"></i></div>
+                    <h4 class="font-heading text-2xl font-semibold mb-3 text-charcoal">Quality Healthcare</h4>
+                    <p class="text-sm text-gray-600 font-light mb-4">Ensuring Level 3 and 4 hospitals are fully equipped and ending the chronic shortage of essential drugs via strict KEMSA supply audits.</p>
+                    <a href="#" class="text-xs font-semibold text-forest uppercase tracking-widest group-hover:text-gold transition flex items-center">Policy Brief <i class="fas fa-arrow-right ml-2 text-[10px]"></i></a>
+                </div>
+
+                <!-- Card 2: Education -->
+                <div class="p-8 border border-gray-100 bg-ivory/30 shadow-sm hover:shadow-premium transition-all duration-300 group fade-up delay-100">
+                    <div class="w-12 h-12 rounded bg-white flex items-center justify-center text-forest text-xl mb-6 shadow-sm group-hover:bg-forest group-hover:text-gold transition"><i class="fas fa-graduation-cap"></i></div>
+                    <h4 class="font-heading text-2xl font-semibold mb-3 text-charcoal">Equitable Education</h4>
+                    <p class="text-sm text-gray-600 font-light mb-4">Digitizing the bursary allocation process to eliminate nepotism, ensuring funds reach the most vulnerable and deserving students.</p>
+                    <a href="#" class="text-xs font-semibold text-forest uppercase tracking-widest group-hover:text-gold transition flex items-center">Policy Brief <i class="fas fa-arrow-right ml-2 text-[10px]"></i></a>
+                </div>
+
+                <!-- Card 3: Roads -->
+                <div class="p-8 border border-gray-100 bg-ivory/30 shadow-sm hover:shadow-premium transition-all duration-300 group fade-up delay-200">
+                    <div class="w-12 h-12 rounded bg-white flex items-center justify-center text-forest text-xl mb-6 shadow-sm group-hover:bg-forest group-hover:text-gold transition"><i class="fas fa-road"></i></div>
+                    <h4 class="font-heading text-2xl font-semibold mb-3 text-charcoal">Infrastructure</h4>
+                    <p class="text-sm text-gray-600 font-light mb-4">Pushing for fair distribution of the Road Maintenance Levy Fund to ensure feeder roads in rural wards are upgraded to all-weather status.</p>
+                    <a href="#" class="text-xs font-semibold text-forest uppercase tracking-widest group-hover:text-gold transition flex items-center">Policy Brief <i class="fas fa-arrow-right ml-2 text-[10px]"></i></a>
+                </div>
+
+                <!-- Card 4: Business -->
+                <div class="p-8 border border-gray-100 bg-ivory/30 shadow-sm hover:shadow-premium transition-all duration-300 group fade-up delay-300">
+                    <div class="w-12 h-12 rounded bg-white flex items-center justify-center text-forest text-xl mb-6 shadow-sm group-hover:bg-forest group-hover:text-gold transition"><i class="fas fa-store"></i></div>
+                    <h4 class="font-heading text-2xl font-semibold mb-3 text-charcoal">MSME Support</h4>
+                    <p class="text-sm text-gray-600 font-light mb-4">Advocating for the reduction of punitive county trade licenses to create a friendly environment for mama mbogas and small startups.</p>
+                    <a href="#" class="text-xs font-semibold text-forest uppercase tracking-widest group-hover:text-gold transition flex items-center">Policy Brief <i class="fas fa-arrow-right ml-2 text-[10px]"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. IMPLEMENTATION TIMELINE -->
+    <section class="py-24 bg-ivory border-t border-gold/20">
+        <div class="max-w-4xl mx-auto px-6 lg:px-8">
+            <div class="text-center mb-16 fade-up">
+                <h2 class="text-gold font-bold text-sm tracking-widest uppercase mb-2">Action Plan</h2>
+                <h3 class="font-heading text-4xl text-forest">The First 100 Days in the Senate</h3>
+            </div>
+
+            <div class="space-y-0">
+                <!-- Step 1 -->
+                <div class="timeline-step flex gap-6 pb-12 fade-up">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-forest text-gold flex items-center justify-center font-heading font-bold text-xl z-10 border-4 border-ivory">01</div>
+                    <div class="pt-2">
+                        <h4 class="font-heading text-2xl font-semibold text-forest mb-2">The Transparency Motion</h4>
+                        <p class="text-sm font-light text-gray-600">Table a motion requiring the Machakos County Government to publish a digital, itemized breakdown of all active contractors and project statuses.</p>
+                    </div>
+                </div>
+                <!-- Step 2 -->
+                <div class="timeline-step flex gap-6 pb-12 fade-up">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-forest text-gold flex items-center justify-center font-heading font-bold text-xl z-10 border-4 border-ivory">02</div>
+                    <div class="pt-2">
+                        <h4 class="font-heading text-2xl font-semibold text-forest mb-2">Bursary Audit Committee</h4>
+                        <p class="text-sm font-light text-gray-600">Initiate a Senate inquiry into the equitable distribution of bursary funds to ensure historical disparities across wards are immediately corrected.</p>
+                    </div>
+                </div>
+                <!-- Step 3 -->
+                <div class="timeline-step flex gap-6 fade-up">
+                    <div class="flex-shrink-0 w-12 h-12 rounded-full bg-forest text-gold flex items-center justify-center font-heading font-bold text-xl z-10 border-4 border-ivory">03</div>
+                    <div class="pt-2">
+                        <h4 class="font-heading text-2xl font-semibold text-forest mb-2">National Water Partnership</h4>
+                        <p class="text-sm font-light text-gray-600">Convene a summit with the Ministry of Water and local leaders to draft an accelerated timeline for the completion of stalled water projects in the county.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. DOWNLOAD / CTA SECTION -->
+    <section id="download" class="py-20 bg-gold text-forest text-center relative overflow-hidden">
+        <!-- Abstract lines -->
+        <div class="absolute inset-0 opacity-10" style="background-image: repeating-linear-gradient(45deg, #0F3D2E 0, #0F3D2E 2px, transparent 2px, transparent 8px);"></div>
+        
+        <div class="max-w-3xl mx-auto px-6 relative z-10 fade-up">
+            <i class="fas fa-file-pdf text-5xl mb-6 opacity-80"></i>
+            <h2 class="font-heading text-4xl md:text-5xl font-bold mb-6">Read the Full 2027 Manifesto</h2>
+            <p class="text-lg font-medium mb-8 max-w-xl mx-auto opacity-90">
+                Dive deeper into the statistics, proposed legislation, and detailed roadmaps for the future of Machakos.
+            </p>
+            <a href="#" class="inline-flex items-center gap-3 bg-forest text-ivory px-8 py-4 font-semibold tracking-wide hover:bg-charcoal transition btn-hover-effect shadow-xl">
+                Download PDF (4.2 MB) <i class="fas fa-download"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- 8. FOOTER (Minimal) -->
+    <footer class="bg-charcoal text-ivory/70 py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
+            <div class="flex items-center justify-center space-x-2 mb-6">
+                <div class="w-8 h-8 bg-gold text-forest flex items-center justify-center rounded-sm font-heading text-lg font-bold">FW</div>
+                <span class="font-heading font-semibold text-lg tracking-wide text-white">Felix Wambua</span>
+            </div>
+            <p class="text-xs font-light tracking-wider uppercase mb-6">Machakos County Senatorial Campaign 2027</p>
+            <div class="space-x-6 text-sm font-light">
+                <a href="index.html" class="hover:text-gold transition">Back to Home</a>
+                <a href="about.html" class="hover:text-gold transition">About Felix</a>
+                <a href="index.html#volunteer" class="hover:text-gold transition">Volunteer</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts for animations -->
+    <script>
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.15
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-up').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
